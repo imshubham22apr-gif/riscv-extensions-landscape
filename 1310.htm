@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const square=nums=>{
+            return nums
+            .map(num=>num*num)
+            .filter(square=>square>10)
+
+        }
+        const inputArray = [2, 3, 4, 5];
+        const result = square(inputArray)
+        console.log(result)
+
+        function largest3(a,b,c){
+            if (a>b && a>c){
+                return a
+            }
+            else if (b>a && b>c){
+                return b
+            }
+            else{
+                return c
+            }
+        }
+        console.log(largest3(1,10,100))
+
+        function emp(fruits){
+            fruits.add('apple','banana','mango')
+            console.log(fruits)
+            console.log(fruits.pop())
+        }
+
+        function checkNumber(num) {
+  // Check if the number is greater than 0
+  if (num > 0) {
+    console.log(`${num} is a positive number.`);
+  }
+  // If not positive, check if it's less than 0
+  else if (num < 0) {
+    console.log(`${num} is a negative number.`);
+  }
+  // If it's neither positive nor negative, it must be zero
+  else {
+    console.log(`${num} is zero.`);
+  }
+}
+
+
+// --- Example Usage ---
+
+checkNumber(15);   // Output: 15 is a positive number.
+checkNumber(-7);   // Output: -7 is a negative number.
+checkNumber(0);    // Output: 0 is zero.
+        /**
+         * 
+         * 
+ * Prints the name of the day based on a number from 1 to 7.
+ * @param {number} day - A number representing the day of the week (1=Monday, 7=Sunday).
+ */
+function printDayOfWeek(day) {
+  // The switch statement evaluates the 'day' variable
+  switch (day) {
+    case 1:
+      console.log("Monday");
+      break; // Stops execution from falling through to the next case
+    case 2:
+      console.log("Tuesday");
+      break;
+    case 3:
+      console.log("Wednesday");
+      break;
+    case 4:
+      console.log("Thursday");
+      break;
+    case 5:
+      console.log("Friday");
+      break;
+    case 6:
+      console.log("Saturday");
+      break;
+    case 7:
+      console.log("Sunday");
+      break;
+    default:
+      // This block runs if 'day' does not match any of the cases above
+      console.log("Invalid day");
+  }
+}
+
+// --- Example Usage ---
+
+let day = 5;
+printDayOfWeek(day); // Output: Friday
+
+day = 1;
+printDayOfWeek(day); // Output: Monday
+
+day = 9;
+printDayOfWeek(day); // Output: Invalid day
+
+       // Loop through numbers from 1 to 20
+for (let i = 1; i <= 20; i++) {
+  
+  // Use the modulo operator (%) to check if the number is even.
+  // A number is even if it has a remainder of 0 when divided by 2.
+  if (i % 2 === 0) {
+    
+    // If the condition is true (the number is even), print it.
+    console.log(i);
+  }
+  
+  // If the number is odd, the 'if' condition is false, 
+  // and the code block is skipped. The loop then continues to the next number.
+}
+
+num=[2,3,2,-1]
+function pos_sum(num){
+    zero=0
+    for (num in num){
+        if (num>0){
+            console.log(zero+=num)
+        }
+    }
+
+}
+
+pos_sum(num)
+prompt('sun be laude')
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            text-align: center;
+            width: 100%;
+            height: 25px;
+            padding-left: 20px;
+            background-color: rgb(255, 0, 0);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        aside{
+            width: 200px;
+            height: 100vh;
+            padding :10px;
+            position: absolute;
+            background-color: rgb(13, 60, 122);
+        }
+        
+        
+        main{
+            margin-left: 230px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        .sticky-widget{
+            position: fixed;
+            top: 10%;
+            padding :20px;
+            height: 150px;
+            width: 200px;
+            left: 20%;
+            background-color: rgb(120, 120, 120);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>   
+        fixed header
+    </header>
+    <aside>
+        sidebar(absolute)
+    </aside>
+    <main>
+        <aside class="sticky-widget">
+            sticky widget , scroll to see effect
+        </aside>
+
+        <section>
+            <p style="height: 2000px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magnam est quaerat natus quis consectetur aperiam! Ad veniam maxime, quibusdam placeat, ut facilis cum totam voluptate quod quasi ratione eveniet!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, eum! Odio non tempora incidunt repellat rem laboriosam quo, cupiditate accusantium commodi recusandae perspiciatis reiciendis adipisci hic, quidem iure! Dolore recusandae laudantium debitis impedit sapiente officiis illum nesciunt molestias aspernatur perspiciatis, odit molestiae perferendis, nostrum ullam. Dicta pariatur deserunt, non ipsum soluta, mollitia itaque, aut amet neque qui inventore ducimus. Repudiandae, quos vitae, officiis alias hic sint reiciendis harum sit explicabo eaque quibusdam est provident accusantium quisquam commodi maiores animi incidunt amet reprehenderit sequi eius enim, odio similique facilis. Doloribus eius temporibus, possimus repellat culpa laboriosam architecto impedit facilis hic expedita voluptatibus quod incidunt similique magni doloremque non voluptas minus, cum dignissimos! Dolorum atque, fuga rem saepe itaque deleniti ratione inventore tenetur culpa voluptate doloremque, quaerat quasi fugiat hic amet qui voluptates earum quidem asperiores quod facere facilis porro? Error corporis, quisquam praesentium distinctio optio alias rerum sunt aperiam? Sunt dolorum explicabo nesciunt voluptate dolore consequuntur ipsum a, est doloribus iste commodi temporibus. Minima praesentium natus ex adipisci laudantium dicta sed architecto reprehenderit possimus quam, deleniti, consequuntur, esse rem non iusto quaerat cupiditate molestiae accusamus vitae eligendi quisquam veritatis nobis laboriosam. Repudiandae repellat ad voluptate voluptatem ipsam eos. Quae, saepe reprehenderit!
+            </p>
+        </section>
+    </main>
+    <footer>static footer</footer>
+</body>
+</html>

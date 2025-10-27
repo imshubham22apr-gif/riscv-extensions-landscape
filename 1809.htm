@@ -1,0 +1,174 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotating Emoji Cards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(160deg, #ff9ebb, #fbb8e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 25px;
+    }
+
+    .card {
+      width: 120px;
+      height: 120px;
+      background: #ffffff;
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+      transition: transform 0.6s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+    }
+
+    .card span {
+      font-size: 34px;
+      margin-bottom: 6px;
+    }
+
+    /* Rotate effect */
+    .card:hover {
+      transform: rotateY(360deg);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+    }
+
+    /* Different subtle background shades */
+    .card:nth-child(1) { background: #fffdf7; }
+    .card:nth-child(2) { background: #fff3e3; }
+    .card:nth-child(3) { background: #eef6ff; }
+    .card:nth-child(4) { background: #f7ecff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <span>😎</span>
+      Cool
+    </div>
+    <div class="card">
+      <span>🍕</span>
+      Pizza
+    </div>
+    <div class="card">
+      <span>🐱</span>
+      Cat
+    </div>
+    <div class="card">
+      <span>🚀</span>
+      Rocket
+    </div>
+  </div>
+
+</body>
+</html>
+
+ -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Box Animation</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            animation: spin 10s infinite ease-in;
+        }
+
+        @keyframes spin {
+            0% {
+                background-color: bisque;
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(calc(100vw - 200px), 0) rotate(90deg);
+                background-color: yellow;
+            }
+            50% {
+                transform: translate(calc(100vw - 200px), calc(100vh - 200px)) rotate(180deg);
+                border-radius: 50%;
+                background-color: red;
+            }
+            75% {
+                transform: translate(0, calc(100vh - 200px)) rotate(270deg);
+                background-color: green;
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+                background-color: bisque;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .road{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+        }
+        .car{
+            width: 50px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            left: 25px;
+            top: 10px;
+        }
+        .wheel_left and .wheel_right {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="road">
+        <div class="car">
+            <div class="wheel_left"></div>
+            <div class="wheel_right">
+
+            </div>
+        </div>
+    </div>   
+    
+</body>
+</html>

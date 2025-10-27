@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Train Booking</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Booking</h1>
+        <form action="book.php" method="post">
+            <table>
+                <tr>
+                    <td>From:</td>
+                    <td><input type="text" name="from" required></td>
+                </tr>
+                <tr>
+                    <td>To:</td>
+                    <td><input type="text" name="to" required></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <td>Class:</td>
+                    <td>
+                        <select name="class" required>
+                            <option value="First">First</option>
+                            <option value="Second">Second</option>
+                            <option value="Third">Third</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Number of seats:</td>
+                    <td><input type="number" name="seats" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Book"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $from = $_POST["from"];
+    $to = $_POST["to"];
+    $date = $_POST["date"];
+    $class = $_POST["class"];
+    $seats = $_POST["seats"];
+    $sql = "INSERT INTO bookings (from_stn, to_stn, date, class, seats) VALUES ('$from', '$to', '$date', '$class', '$seats')";
+    if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYWBUT.COM - Professional Redesign</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Classic Apple Blue for accents
+                        'apple-blue': '#007AFF', 
+                        'light-grey': '#F4F4F7',
+                        'dark-text': '#1D1D1F', // Almost black
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for subtle shadow effects, inspired by iOS cards */
+        .card-shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card-shadow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 15px 25px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-dark-text min-h-screen">
+
+    <!-- 1. Minimalist Header Navigation -->
+    <header class="sticky top-0 z-10 bg-white/95 backdrop-blur-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            
+            <!-- Logo/Site Name (Bold and Clear) -->
+            <a href="#" class="text-xl font-extrabold tracking-tight text-dark-text">MYWBUT.COM</a>
+            
+            <!-- Primary Navigation Links (Subtle) -->
+            <nav class="hidden lg:flex space-x-8 text-sm font-medium text-gray-500">
+                <a href="#" class="hover:text-dark-text transition duration-150">Study Resources</a>
+                <a href="#" class="hover:text-dark-text transition duration-150">Ask Question</a>
+                <a href="#" class="hover:text-dark-text transition duration-150">Workshops</a>
+                <a href="#" class="text-dark-text">Winter Training 2021-22</a>
+                <a href="#" class="hover:text-dark-text transition duration-150">TELOS 2021</a>
+                <a href="#" class="hover:text-dark-text transition duration-150">Admission</a>
+            </nav>
+            
+            <!-- Utility Links -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-dark-text hidden sm:block">Login</a>
+                <a href="#" class="text-sm font-medium text-dark-text hover:text-apple-blue transition duration-150">Mywbut</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+
+        <!-- 2. Hero Section - Focus on Clarity -->
+        <div class="text-center mb-16 md:mb-24">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-dark-text mb-4">
+                MYWBUT.COM
+            </h1>
+            <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+                The complete online portal for Technical students and colleges of West Bengal.
+                Empowering your academic journey with comprehensive resources and updates.
+            </p>
+        </div>
+
+        <!-- 3. Feature Cards (4 Blue Boxes Redesigned) -->
+        <section class="mb-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Card 1: Study Material -->
+                <a href="#" class="bg-white p-6 md:p-8 rounded-3xl card-shadow flex flex-col items-start hover:ring-2 hover:ring-apple-blue/50">
+                    <div class="p-3 rounded-xl bg-apple-blue/10 mb-4">
+                        <!-- Book Icon (Inline SVG for clean, fast rendering) -->
+                        <svg class="w-6 h-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.593 6.47 9 7.152 9 8.24c0 1.258 1.408 2.052 3 2.052s3-.794 3-2.052c0-1.088-1.593-1.77-3-1.987zM4.755 10.99l12.56-1.57A.5.5 0 0118 9.575V20a.5.5 0 01-.755.43l-12.56-1.57a.5.5 0 01-.18-1.42l.18-12.56z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark-text mb-1">Study Material</h3>
+                    <p class="text-sm text-gray-500">Syllabus, notes, and video tutorials for all subjects.</p>
+                </a>
+
+                <!-- Card 2: Digital Resources -->
+                <a href="#" class="bg-white p-6 md:p-8 rounded-3xl card-shadow flex flex-col items-start hover:ring-2 hover:ring-apple-blue/50">
+                    <div class="p-3 rounded-xl bg-apple-blue/10 mb-4">
+                        <!-- Laptop Icon -->
+                        <svg class="w-6 h-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L3 17V7a2 2 0 012-2h14a2 2 0 012 2v10h-6.75M13.5 17L21 17M12 21h.01M16.5 21h.01M7.5 21h.01"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark-text mb-1">Online Portal</h3>
+                    <p class="text-sm text-gray-500">Access results, routines, and forms digitally.</p>
+                </a>
+
+                <!-- Card 3: Workshops & Training -->
+                <a href="#" class="bg-white p-6 md:p-8 rounded-3xl card-shadow flex flex-col items-start hover:ring-2 hover:ring-apple-blue/50">
+                    <div class="p-3 rounded-xl bg-apple-blue/10 mb-4">
+                        <!-- Gamepad Icon (representing interaction/training) -->
+                        <svg class="w-6 h-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10H7m6 4H7m6 4h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2h-3m-6 0h.01M10 16h.01"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark-text mb-1">Skill Development</h3>
+                    <p class="text-sm text-gray-500">Workshops, winter training, and career guidance.</p>
+                </a>
+
+                <!-- Card 4: Academic Administration -->
+                <a href="#" class="bg-white p-6 md:p-8 rounded-3xl card-shadow flex flex-col items-start hover:ring-2 hover:ring-apple-blue/50">
+                    <div class="p-3 rounded-xl bg-apple-blue/10 mb-4">
+                        <!-- University/Building Icon -->
+                        <svg class="w-6 h-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m-2 0v-5a2 2 0 012-2h2a2 2 0 012 2v5m-8-5h.01M7 9h.01"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark-text mb-1">University Info</h3>
+                    <p class="text-sm text-gray-500">Admission rules, university contacts, and guidelines.</p>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 4. Study Material Section -->
+        <section class="grid lg:grid-cols-2 gap-12 mb-24">
+            
+            <div class="bg-light-grey p-8 rounded-3xl flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-dark-text mb-4">Comprehensive Study Material</h2>
+                <p class="text-gray-600 mb-6">
+                    MYWBUT provides **Syllabus, Study Notes, Previous Year Question Papers, Video Tutorials** and Suggestion Papers for WBUT (MAKAUT) students, so that students can score better marks in Semester Exams.
+                </p>
+
+                <!-- Icon Grid (Replaces the messy circles with clean, uniform buttons) -->
+                <div class="grid grid-cols-3 sm:grid-cols-4 gap-3">
+                    <button class="flex items-center justify-center py-2 px-4 bg-white hover:bg-apple-blue hover:text-white text-gray-700 text-sm font-medium rounded-xl transition duration-200 shadow-sm">
+                        Syllabus
+                    </button>
+                    <button class="flex items-center justify-center py-2 px-4 bg-white hover:bg-apple-blue hover:text-white text-gray-700 text-sm font-medium rounded-xl transition duration-200 shadow-sm">
+                        Study Notes
+                    </button>
+                    <button class="flex items-center justify-center py-2 px-4 bg-white hover:bg-apple-blue hover:text-white text-gray-700 text-sm font-medium rounded-xl transition duration-200 shadow-sm">
+                        Question Paper
+                    </button>
+                    <button class="flex items-center justify-center py-2 px-4 bg-white hover:bg-apple-blue hover:text-white text-gray-700 text-sm font-medium rounded-xl transition duration-200 shadow-sm">
+                        Video Tutorial
+                    </button>
+                    <button class="flex items-center justify-center py-2 px-4 bg-white hover:bg-apple-blue hover:text-white text-gray-700 text-sm font-medium rounded-xl transition duration-200 shadow-sm">
+                        Suggestion
+                    </button>
+                </div>
+            </div>
+
+            <!-- Placeholder for a clean image/illustration if needed -->
+            <div class="hidden lg:flex items-center justify-center">
+                <div class="w-full h-80 bg-gray-100 rounded-3xl flex items-center justify-center text-gray-400 text-lg font-medium border border-gray-200">
+                    Academic Illustration Placeholder
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. Latest Updates (Clean List Format) -->
+        <section>
+            <h2 class="text-3xl font-bold text-dark-text mb-8 border-b border-gray-100 pb-4">Latest Updates</h2>
+
+            <ul class="space-y-4">
+                <!-- Update Item 1 -->
+                <li class="p-6 bg-white rounded-xl border border-gray-100 hover:border-apple-blue/50 transition duration-300 flex justify-between items-center">
+                    <div class="flex-grow">
+                        <p class="text-lg font-medium text-dark-text">
+                            Routine for First Semester Examination 2021-22 is available
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1">
+                            Published: <span class="text-gray-700">3rd February, 2022</span>
+                        </p>
+                    </div>
+                    <button class="ml-4 px-5 py-2 bg-apple-blue text-white text-sm font-semibold rounded-full hover:bg-blue-600 transition duration-150 shadow-md">
+                        Download Routine
+                    </button>
+                </li>
+                
+                <!-- Update Item 2 (Results) -->
+                <li class="p-6 bg-white rounded-xl border border-gray-100 hover:border-apple-blue/50 transition duration-300 flex justify-between items-center">
+                    <div class="flex-grow">
+                        <p class="text-lg font-medium text-dark-text">
+                            Results of all students of UG and PG courses of <span class="font-bold">3rd, 5th, 7th and 9th Semester</span> Examinations 2021-22, which were conducted till January 31, 2022 are published.
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1">
+                            Published: <span class="text-gray-700">3rd February, 2022</span>
+                        </p>
+                    </div>
+                    <button class="ml-4 px-5 py-2 bg-dark-text text-white text-sm font-semibold rounded-full hover:bg-gray-700 transition duration-150 shadow-md">
+                        Check Result
+                    </button>
+                </li>
+
+                <!-- Update Item 3 (Mock Example) -->
+                <li class="p-6 bg-white rounded-xl border border-gray-100 hover:border-apple-blue/50 transition duration-300 flex justify-between items-center">
+                    <div class="flex-grow">
+                        <p class="text-lg font-medium text-dark-text">
+                            Registration for Summer Internship Program 2024 is now open.
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1">
+                            Deadline: <span class="text-red-500">30th October, 2025</span>
+                        </p>
+                    </div>
+                    <button class="ml-4 px-5 py-2 bg-green-500 text-white text-sm font-semibold rounded-full hover:bg-green-600 transition duration-150 shadow-md">
+                        Apply Now
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- 6. Minimal Footer -->
+    <footer class="mt-20 border-t border-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left sm:flex justify-between items-center text-sm text-gray-500">
+            <div class="mb-4 sm:mb-0 space-x-4">
+                <a href="#" class="hover:text-dark-text">About Us</a>
+                <a href="#" class="hover:text-dark-text">Campus Representative</a>
+                <a href="#" class="hover:text-dark-text">Colleges</a>
+                <a href="#" class="hover:text-dark-text">Expert Admission Guidance</a>
+                <a href="#" class="hover:text-dark-text">Contact Us</a>
+            </div>
+            <p>&copy; 2025 MYWBUT.COM. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

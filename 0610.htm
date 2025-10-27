@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+</head>
+<body>
+  
+
+
+    <script>
+        // Task 1: Hello, Stranger!
+        // Asks the user for their name and prints a greeting.
+        const userName = prompt("What is your name?");
+        console.log(`Hello, ${userName}! Welcome to JavaScript land`);
+
+
+        // Task 2: Lucky Number
+        // Takes a number from the user and prints its double.
+        let luckyNumberStr = prompt("Enter your lucky number:");
+        let luckyNumber = Number(luckyNumberStr); // Convert the input string to a number
+        console.log(`Double of your lucky number is ${luckyNumber * 2}.`);
+
+
+        // Task 3: Mini Cart
+        // Asks for an item and its price, stores it in an object, and confirms.
+        const itemName = prompt("Enter the item you want to add to the cart:");
+        const itemPriceStr = prompt(`Enter the price for ${itemName}:`);
+        const cartItem = {
+          item: itemName,
+          price: Number(itemPriceStr) // Convert price to a number
+        };
+        console.log(`You added ${cartItem.item} worth ${cartItem.price} rupees to your cart.`);
+
+
+        // Task 4: Funny Nickname
+        // Creates a funny nickname from the user's name.
+        const originalName = prompt("Enter your name to get a funny nickname:");
+        const funnyNickname = originalName.toUpperCase().slice(0, 3) + "inator";
+        console.log(`Your funny nickname is: ${funnyNickname}`);
+
+
+        // Task 5: Simple Calculator
+        // Takes two numbers and performs basic arithmetic operations.
+        const num1 = Number(prompt("Enter the first number:"));
+        const num2 = Number(prompt("Enter the second number:"));
+
+        console.log(`Sum: ${num1 + num2}`);          // Prints the sum
+        console.log(`Difference: ${num1 - num2}`);  // Prints the difference
+        console.log(`Product: ${num1 * num2}`);     // Prints the product
+        console.log(`Quotient: ${num1 / num2}`);    // Prints the quotient
+        console.log(`Remainder: ${num1 % num2}`);   // Prints the remainder
+
+
+        // Task 6: Grade Evaluator
+        // Evaluates a student's grade based on their marks.
+        const marks = Number(prompt("Enter your marks (0-100):"));
+
+        if (marks >= 90) {
+          console.log("A Grade"); // For marks 90 or above
+        } else if (marks >= 75) {
+          console.log("B Grade"); // For marks 75 to 89
+        } else if (marks >= 50) {
+          console.log("C Grade"); // For marks 50 to 74
+        } else {
+          console.log("Fail");    // For marks less than 50
+        }
+
+
+        // Task 7: Ternary Operator
+        // Uses a ternary operator to give advice based on user input.
+        const hungryResponse = prompt("Are you hungry? (yes/no)");
+        const message = hungryResponse.toLowerCase() === 'yes' ? "Grab Pizza" : "Stay Coding";
+        console.log(message); // Prints "Grab Pizza" for 'yes' or "Stay Coding" otherwise
+
+    </script>
+
+</body>
+</html>

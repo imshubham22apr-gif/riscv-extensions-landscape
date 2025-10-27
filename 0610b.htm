@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let varad={
+            name:"varad",
+            age:20
+            talking :function(){
+                console.log("hello");
+                return this.name+' is talking';
+            }
+        }
+        console.log (varad.talking());
+        for(let key in varad){
+            console.log(varad[key]);
+        }
+        Object.entries(varad).forEach(([key,value])=>{
+            console.log(key,value);
+        })
+        let anish=factory();
+        let anuj=factory();
+        function factory(){
+            return {
+                name:"anish",
+                age:20,
+                talking :function(){
+                    console.log("hello");
+                    return this.name+' is talking';
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
