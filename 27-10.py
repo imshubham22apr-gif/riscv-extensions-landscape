@@ -1,7 +1,3 @@
-from sys import exec_prefix
-from tkinter import E, N
-
-
 # while True:
     # a,b=int(input('enter a no:')),int(input('enter another no:'))
 
@@ -18,16 +14,14 @@ from tkinter import E, N
     # finally:
     #     print(' code is running well')
         
-
 #errors:
 # terminates the programs
-# syntax , indentation
+# syntax , indentation, runtime
 # compile time 
-
 
 #exceptions:
 # handles the errors
-# type, ZeroDivision, value
+# type, ZeroDivision, value, key , name, index, attribute 
 # run time
 # handles the errors by try-except
 
@@ -52,6 +46,10 @@ from tkinter import E, N
     #     print(val)
         
 
+from calendar import c
+from tkinter import E
+
+
 try:
     l=[1,2]
     print(l[4])
@@ -69,3 +67,54 @@ except:
 
 
 
+
+
+
+# oh that's a good number !
+#class-2
+
+try:
+    try:
+        a= int(input('enter a no:'))
+        b= int(input('enter another no:'))
+        res=a/b
+    except ValueError:
+        print('invalid input')
+except ZeroDivisionError:
+    print('cannot divide by zero') 
+except Exception:
+    print('something went wrong', Exception)
+else:
+    print(res)
+finally:
+    print(' code is running well')
+
+#class 
+class car:
+    #attributes
+    company=''
+    color=''
+    number=0
+
+    def display_info(self):  
+        # self refers to current instance of class
+        print(self.company,self.color,self.number)
+    
+#objects
+c1=car()
+c1.company='maruti'
+c1.color='red'
+c1.number=1234
+
+c2=car()
+c2.company='tata'
+c2.color='blue'
+c2.number=5678
+
+
+#calling methods
+c1.display_info()
+c2.display_info()
+
+
+    
