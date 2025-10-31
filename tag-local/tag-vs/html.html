@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Your Latest Tech Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #222;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 48px 0 48px;
+        }
+        .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #212121;
+            letter-spacing: 1.5px;
+        }
+        nav a {
+            margin-left: 32px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #2298da;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            background: linear-gradient(120deg, #6cc1ff 0%, #3a8dde 100%);
+            color: #fff;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 2.9rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .hero-sub {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+        .shop-btn {
+            padding: 0.9rem 2.2rem;
+            font-size: 1.15rem;
+            background: #18b6fa;
+            border: none;
+            border-radius: 28px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(24,182,250,0.23);
+            transition: background 0.22s;
+        }
+        .shop-btn:hover {
+            background: #107cb6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TechShop</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-title">Welcome to TechShop</div>
+        <div class="hero-sub">Discover the latest in technology and electronics</div>
+        <button class="shop-btn">Shop Now</button>
+    </section>
+</body>
+</html>
