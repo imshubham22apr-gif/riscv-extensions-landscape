@@ -1,0 +1,40 @@
+{
+  "hospitals": [
+    {
+      "id": "hosp1",
+      "name": "City General Hospital",
+      "address": "123 Main Street, Mumbai",
+      "city": "Mumbai",
+      "total_beds": 500,
+      "available_beds": 120,
+      "last_updated": "2025-11-14T14:30:00Z"
+    },
+    {
+      "id": "hosp2",
+      "name": "Apollo Super Speciality",
+      "address": "456 Bannerghatta Road, Bangalore",
+      "city": "Bangalore",
+      "total_beds": 350,
+      "available_beds": 45,
+      "last_updated": "2025-11-14T14:25:00Z"
+    },
+    {
+      "id": "hosp3",
+      "name": "Fortis Hospital",
+      "address": "789 MG Road, Delhi",
+      "city": "Delhi",
+      "total_beds": 400,
+      "available_beds": 88,
+      "last_updated": "2025-11-14T14:32:00Z"
+    },
+    {
+      "id": "hosp4",
+      "name": "Sahyadri Hospital",
+      "address": "101 Deccan Gymkhana, Pune",
+      "city": "Pune",
+      "total_beds": 280,
+      "available_beds": 30,
+      "last_updated": "2025-11-14T14:15:00Z"
+    }
+  ]
+}
