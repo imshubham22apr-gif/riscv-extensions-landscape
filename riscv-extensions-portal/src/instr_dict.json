@@ -1,0 +1,1209 @@
+{
+  "add": {
+    "encoding": "0000000----------000-----0110011",
+    "variable_fields": [
+      "rd",
+      "rs1",
+      "rs2"
+    ],
+    "extension": [
+      "rv_i"
+    ],
+    "match": "0x00000033",
+    "mask": "0xfe007fff"
+  },
+  "sub": {
+    "encoding": "0100000----------000-----0110011",
+    "variable_fields": [
+      "rd",
+      "rs1",
+      "rs2"
+    ],
+    "extension": [
+      "rv_i"
+    ],
+    "match": "0x40000033",
+    "mask": "0xfe007fff"
+  },
+  "lr_w": {
+    "encoding": "00010--00000-----010-----0101111",
+    "variable_fields": [
+      "rd",
+      "rs1",
+      "aq",
+      "rl"
+    ],
+    "extension": [
+      "rv_a"
+    ],
+    "match": "0x1000202f",
+    "mask": "0xf800707f"
+  },
+  "sc_w": {
+    "encoding": "00011------------010-----0101111",
+    "variable_fields": [
+      "rd",
+      "rs1",
+      "rs2",
+      "aq",
+      "rl"
+    ],
+    "extension": [
+      "rv_a"
+    ],
+    "match": "0x1800202f",
+    "mask": "0xf800707f"
+  },
+  "c_add": {
+    "encoding": "1001------------10",
+    "variable_fields": [
+      "rd",
+      "rs2"
+    ],
+    "extension": [
+      "rv_c"
+    ],
+    "match": "0x9002",
+    "mask": "0xf003"
+  },
+  "mul": {
+    "encoding": "0000001----------000-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "div": {
+    "encoding": "0000001----------100-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "rem": {
+    "encoding": "0000001----------110-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "fld": {
+    "encoding": "-----------------011-----0000111",
+    "extension": [
+      "rv_d"
+    ]
+  },
+  "fsd": {
+    "encoding": "-----------------011-----0100111",
+    "extension": [
+      "rv_d"
+    ]
+  },
+  "fadd_d": {
+    "encoding": "0000001----------011-----1010011",
+    "extension": [
+      "rv_d"
+    ]
+  },
+  "fsub_d": {
+    "encoding": "0000101----------011-----1010011",
+    "extension": [
+      "rv_d"
+    ]
+  },
+  "fmul_d": {
+    "encoding": "0001001----------011-----1010011",
+    "extension": [
+      "rv_d"
+    ]
+  },
+  "fdiv_d": {
+    "encoding": "0001101----------011-----1010011",
+    "extension": [
+      "rv_d"
+    ]
+  },
+  "sh1add": {
+    "encoding": "0010000----------010-----0110011",
+    "extension": [
+      "rv_zba"
+    ]
+  },
+  "sh2add": {
+    "encoding": "0010000----------100-----0110011",
+    "extension": [
+      "rv_zba"
+    ]
+  },
+  "sh3add": {
+    "encoding": "0010000----------110-----0110011",
+    "extension": [
+      "rv_zba"
+    ]
+  },
+  "bclr": {
+    "encoding": "0100100----------001-----0110011",
+    "extension": [
+      "rv_zbs"
+    ]
+  },
+  "bset": {
+    "encoding": "0010100----------001-----0110011",
+    "extension": [
+      "rv_zbs"
+    ]
+  },
+  "binv": {
+    "encoding": "0110100----------001-----0110011",
+    "extension": [
+      "rv_zbs"
+    ]
+  },
+  "amocas_w": {
+    "encoding": "00101------------010-----0101111",
+    "extension": [
+      "rv_zacas"
+    ]
+  },
+  "amocas_d": {
+    "encoding": "00101------------011-----0101111",
+    "extension": [
+      "rv_zacas"
+    ]
+  },
+  "sret": {
+    "encoding": "00010000001000000000000001110011",
+    "extension": [
+      "rv_s"
+    ]
+  },
+  "sfence_vma": {
+    "encoding": "0001001----------000000001110011",
+    "extension": [
+      "rv_s"
+    ]
+  },
+  "csrrw": {
+    "encoding": "-----------------001-----1110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "addi": {
+    "encoding": "-----------------000-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "slti": {
+    "encoding": "-----------------010-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "andi": {
+    "encoding": "-----------------111-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "ori": {
+    "encoding": "-----------------110-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "xori": {
+    "encoding": "-----------------100-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "slli": {
+    "encoding": "000000-----------001-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "srli": {
+    "encoding": "000000-----------101-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "srai": {
+    "encoding": "010000-----------101-----0010011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "lw": {
+    "encoding": "-----------------010-----0000011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "sw": {
+    "encoding": "-----------------010-----0100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "lb": {
+    "encoding": "-----------------000-----0000011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "lh": {
+    "encoding": "-----------------001-----0000011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "sb": {
+    "encoding": "-----------------000-----0100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "sh": {
+    "encoding": "-----------------001-----0100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "beq": {
+    "encoding": "-----------------000-----1100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "bne": {
+    "encoding": "-----------------001-----1100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "blt": {
+    "encoding": "-----------------100-----1100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "bge": {
+    "encoding": "-----------------101-----1100011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "jal": {
+    "encoding": "-------------------------1101111",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "jalr": {
+    "encoding": "-----------------000-----1100111",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "lui": {
+    "encoding": "-------------------------0110111",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "auipc": {
+    "encoding": "-------------------------0010111",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "slt": {
+    "encoding": "0000000----------010-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "sltu": {
+    "encoding": "0000000----------011-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "and": {
+    "encoding": "0000000----------111-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "or": {
+    "encoding": "0000000----------110-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "xor": {
+    "encoding": "0000000----------100-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "sll": {
+    "encoding": "0000000----------001-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "srl": {
+    "encoding": "0000000----------101-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "sra": {
+    "encoding": "0100000----------101-----0110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "ecall": {
+    "encoding": "00000000000000000000000001110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "ebreak": {
+    "encoding": "00000000000100000000000001110011",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "fence": {
+    "encoding": "-----------------000-----0001111",
+    "extension": [
+      "rv_i"
+    ]
+  },
+  "mulh": {
+    "encoding": "0000001----------001-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "mulhsu": {
+    "encoding": "0000001----------010-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "mulhu": {
+    "encoding": "0000001----------011-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "divu": {
+    "encoding": "0000001----------101-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "remu": {
+    "encoding": "0000001----------111-----0110011",
+    "extension": [
+      "rv_m"
+    ]
+  },
+  "flw": {
+    "encoding": "-----------------010-----0000111",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fsw": {
+    "encoding": "-----------------010-----0100111",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fadd_s": {
+    "encoding": "0000000------------------1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fsub_s": {
+    "encoding": "0000100------------------1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fmul_s": {
+    "encoding": "0001000------------------1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fdiv_s": {
+    "encoding": "0001100------------------1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fsqrt_s": {
+    "encoding": "010110000000-------------1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fmadd_s": {
+    "encoding": "-----00------------------1000011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "amoswap_w": {
+    "encoding": "00001------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "amoadd_w": {
+    "encoding": "00000------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "amoand_w": {
+    "encoding": "01100------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "amoor_w": {
+    "encoding": "01000------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "amoxor_w": {
+    "encoding": "00100------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "amomax_w": {
+    "encoding": "10100------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "amomin_w": {
+    "encoding": "10000------------010-----0101111",
+    "extension": [
+      "rv_a"
+    ]
+  },
+  "clz": {
+    "encoding": "011000000000-----001-----0010011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "ctz": {
+    "encoding": "011000000001-----001-----0010011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "cpop": {
+    "encoding": "011000000010-----001-----0010011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "andn": {
+    "encoding": "0100000----------111-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "orn": {
+    "encoding": "0100000----------110-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "xnor": {
+    "encoding": "0100000----------100-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "max": {
+    "encoding": "0000101----------110-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "min": {
+    "encoding": "0000101----------100-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "rol": {
+    "encoding": "0110000----------001-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "ror": {
+    "encoding": "0110000----------101-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "rev8": {
+    "encoding": "011010011000-----101-----0010011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "sext_b": {
+    "encoding": "011000000100-----001-----0010011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "sext_h": {
+    "encoding": "011000000101-----001-----0010011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "zext_h": {
+    "encoding": "000010000000-----100-----0110011",
+    "extension": [
+      "rv_zbb"
+    ]
+  },
+  "bext": {
+    "encoding": "0100100----------101-----0110011",
+    "extension": [
+      "rv_zbs"
+    ]
+  },
+  "clmul": {
+    "encoding": "0000101----------001-----0110011",
+    "extension": [
+      "rv_zbc"
+    ]
+  },
+  "clmulh": {
+    "encoding": "0000101----------011-----0110011",
+    "extension": [
+      "rv_zbc"
+    ]
+  },
+  "clmulr": {
+    "encoding": "0000101----------010-----0110011",
+    "extension": [
+      "rv_zbc"
+    ]
+  },
+  "c_lwsp": {
+    "encoding": "010-----------10",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_swsp": {
+    "encoding": "110-----------10",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_lw": {
+    "encoding": "010-----------00",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_sw": {
+    "encoding": "110-----------00",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_j": {
+    "encoding": "101-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_jal": {
+    "encoding": "001-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_beqz": {
+    "encoding": "110-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_bnez": {
+    "encoding": "111-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_li": {
+    "encoding": "010-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_lui": {
+    "encoding": "011-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_addi": {
+    "encoding": "000-----------01",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_mv": {
+    "encoding": "1000----------10",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_nop": {
+    "encoding": "0000000000000001",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "hfence_vvma": {
+    "encoding": "0010001----------000000001110011",
+    "extension": [
+      "rv_h"
+    ]
+  },
+  "hfence_gvma": {
+    "encoding": "0110001----------000000001110011",
+    "extension": [
+      "rv_h"
+    ]
+  },
+  "hlv_w": {
+    "encoding": "011010000000-----100-----1110011",
+    "extension": [
+      "rv_h"
+    ]
+  },
+  "hsv_w": {
+    "encoding": "0110011----------100-----1110011",
+    "extension": [
+      "rv_h"
+    ]
+  },
+  "csrrs": {
+    "encoding": "-----------------010-----1110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "csrrc": {
+    "encoding": "-----------------011-----1110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "csrrwi": {
+    "encoding": "-----------------101-----1110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "csrrsi": {
+    "encoding": "-----------------110-----1110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "csrrci": {
+    "encoding": "-----------------111-----1110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "mret": {
+    "encoding": "00110000001000000000000001110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "wfi": {
+    "encoding": "00010000010100000000000001110011",
+    "extension": [
+      "rv_system"
+    ]
+  },
+  "fence_i": {
+    "encoding": "00000000000000000001000000001111",
+    "extension": [
+      "rv_zifencei"
+    ]
+  },
+  "pause": {
+    "encoding": "00000001000000000000000000001111",
+    "extension": [
+      "rv_zihintpause"
+    ]
+  },
+  "aes32esmi": {
+    "encoding": "--10011----------000-----0110011",
+    "extension": [
+      "rv_zkne"
+    ]
+  },
+  "aes32esi": {
+    "encoding": "--10001----------000-----0110011",
+    "extension": [
+      "rv_zkne"
+    ]
+  },
+  "aes32dsmi": {
+    "encoding": "--10111----------000-----0110011",
+    "extension": [
+      "rv_zknd"
+    ]
+  },
+  "aes32dsi": {
+    "encoding": "--10101----------000-----0110011",
+    "extension": [
+      "rv_zknd"
+    ]
+  },
+  "sha256sig0": {
+    "encoding": "000100000010-----001-----0010011",
+    "extension": [
+      "rv_zknh"
+    ]
+  },
+  "sha256sig1": {
+    "encoding": "000100000011-----001-----0010011",
+    "extension": [
+      "rv_zknh"
+    ]
+  },
+  "sha256sum0": {
+    "encoding": "000100000000-----001-----0010011",
+    "extension": [
+      "rv_zknh"
+    ]
+  },
+  "sha256sum1": {
+    "encoding": "000100000001-----001-----0010011",
+    "extension": [
+      "rv_zknh"
+    ]
+  },
+  "sm4ed": {
+    "encoding": "--11000----------000-----0110011",
+    "extension": [
+      "rv_zksed"
+    ]
+  },
+  "sm4ks": {
+    "encoding": "--11010----------000-----0110011",
+    "extension": [
+      "rv_zksed"
+    ]
+  },
+  "sm3p0": {
+    "encoding": "000100001000-----001-----0010011",
+    "extension": [
+      "rv_zksh"
+    ]
+  },
+  "sm3p1": {
+    "encoding": "000100001001-----001-----0010011",
+    "extension": [
+      "rv_zksh"
+    ]
+  },
+  "vadd_vv": {
+    "encoding": "000000-----------000-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vsub_vv": {
+    "encoding": "000010-----------000-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vmul_vv": {
+    "encoding": "100101-----------010-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vand_vv": {
+    "encoding": "001001-----------000-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vor_vv": {
+    "encoding": "001010-----------000-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vxor_vv": {
+    "encoding": "001011-----------000-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vsetvli": {
+    "encoding": "0----------------111-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vle8_v": {
+    "encoding": "000000-00000-----000-----0000111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vse8_v": {
+    "encoding": "000000-00000-----000-----0100111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vle32_v": {
+    "encoding": "000000-00000-----110-----0000111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vse32_v": {
+    "encoding": "000000-00000-----110-----0100111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vaesdf_vv": {
+    "encoding": "101000100000-----010-----1110111",
+    "extension": [
+      "rv_zvkned"
+    ]
+  },
+  "vaesdf_vs": {
+    "encoding": "101000100001-----010-----1110111",
+    "extension": [
+      "rv_zvkned"
+    ]
+  },
+  "vaesef_vv": {
+    "encoding": "101000100010-----010-----1110111",
+    "extension": [
+      "rv_zvkned"
+    ]
+  },
+  "vaesef_vs": {
+    "encoding": "101000100011-----010-----1110111",
+    "extension": [
+      "rv_zvkned"
+    ]
+  },
+  "vsha2ms_vv": {
+    "encoding": "101101-----------010-----1110111",
+    "extension": [
+      "rv_zvknha"
+    ]
+  },
+  "vsha2cl_vv": {
+    "encoding": "101111-----------010-----1110111",
+    "extension": [
+      "rv_zvknha"
+    ]
+  },
+  "vsm4k_vi": {
+    "encoding": "100001-----------010-----1110111",
+    "extension": [
+      "rv_zvksed"
+    ]
+  },
+  "vsm4r_vv": {
+    "encoding": "101000001010-----010-----1110111",
+    "extension": [
+      "rv_zvksed"
+    ]
+  },
+  "vsm3me_vv": {
+    "encoding": "100000-----------010-----1110111",
+    "extension": [
+      "rv_zvksh"
+    ]
+  },
+  "vghsh_vv": {
+    "encoding": "101100-----------010-----1110111",
+    "extension": [
+      "rv_zvkg"
+    ]
+  },
+  "vgmul_vv": {
+    "encoding": "101000010001-----010-----1110111",
+    "extension": [
+      "rv_zvkg"
+    ]
+  },
+  "vandn_vv": {
+    "encoding": "000001-----------000-----1010111",
+    "extension": [
+      "rv_zvkb"
+    ]
+  },
+  "vrol_vv": {
+    "encoding": "010101-----------000-----1010111",
+    "extension": [
+      "rv_zvkb"
+    ]
+  },
+  "vror_vv": {
+    "encoding": "010100-----------000-----1010111",
+    "extension": [
+      "rv_zvkb"
+    ]
+  },
+  "vclmul_vv": {
+    "encoding": "001100-----------010-----1010111",
+    "extension": [
+      "rv_zvbc"
+    ]
+  },
+  "vclmulh_vv": {
+    "encoding": "001101-----------010-----1010111",
+    "extension": [
+      "rv_zvbc"
+    ]
+  },
+  "amoswap_d": {
+    "encoding": "00001------------011-----0101111",
+    "extension": [
+      "rv_zaamo"
+    ]
+  },
+  "amoadd_d": {
+    "encoding": "00000------------011-----0101111",
+    "extension": [
+      "rv_zaamo"
+    ]
+  },
+  "amoand_d": {
+    "encoding": "01100------------011-----0101111",
+    "extension": [
+      "rv_zaamo"
+    ]
+  },
+  "amoor_d": {
+    "encoding": "01000------------011-----0101111",
+    "extension": [
+      "rv_zaamo"
+    ]
+  },
+  "lr_d": {
+    "encoding": "00010--00000-----011-----0101111",
+    "extension": [
+      "rv_zalrsc"
+    ]
+  },
+  "sc_d": {
+    "encoding": "00011------------011-----0101111",
+    "extension": [
+      "rv_zalrsc"
+    ]
+  },
+  "lpad": {
+    "encoding": "-----------------000000000010111",
+    "extension": [
+      "rv_zicfilp"
+    ]
+  },
+  "sspush": {
+    "encoding": "11001110000000000100000001110011",
+    "extension": [
+      "rv_zicfiss"
+    ]
+  },
+  "sspopchk": {
+    "encoding": "11001100000-----100000001110011",
+    "extension": [
+      "rv_zicfiss"
+    ]
+  },
+  "wrs_nto": {
+    "encoding": "00000000110100000000000001110011",
+    "extension": [
+      "rv_zawrs"
+    ]
+  },
+  "wrs_sto": {
+    "encoding": "00000001110100000000000001110011",
+    "extension": [
+      "rv_zawrs"
+    ]
+  },
+  "cbo_clean": {
+    "encoding": "000000000001-----010000000001111",
+    "extension": [
+      "rv_zicbom"
+    ]
+  },
+  "cbo_flush": {
+    "encoding": "000000000010-----010000000001111",
+    "extension": [
+      "rv_zicbom"
+    ]
+  },
+  "cbo_inval": {
+    "encoding": "000000000000-----010000000001111",
+    "extension": [
+      "rv_zicbom"
+    ]
+  },
+  "cbo_zero": {
+    "encoding": "000000000100-----010000000001111",
+    "extension": [
+      "rv_zicboz"
+    ]
+  },
+  "prefetch_r": {
+    "encoding": "000000000001-----110-----0010011",
+    "extension": [
+      "rv_zicbop"
+    ]
+  },
+  "prefetch_w": {
+    "encoding": "000000000011-----110-----0010011",
+    "extension": [
+      "rv_zicbop"
+    ]
+  },
+  "sinval_vma": {
+    "encoding": "0001011----------000000001110011",
+    "extension": [
+      "rv_svinval"
+    ]
+  },
+  "sfence_w_inval": {
+    "encoding": "00011000000000000000000001110011",
+    "extension": [
+      "rv_svinval"
+    ]
+  },
+  "sfence_inval_ir": {
+    "encoding": "00011000000100000000000001110011",
+    "extension": [
+      "rv_svinval"
+    ]
+  },
+  "mop_r_0": {
+    "encoding": "100011000000-----100-----1110011",
+    "extension": [
+      "rv_zimop"
+    ]
+  },
+  "mop_r_1": {
+    "encoding": "100011000001-----100-----1110011",
+    "extension": [
+      "rv_zimop"
+    ]
+  },
+  "mop_rr_0": {
+    "encoding": "100011000000-----100-----1110011",
+    "extension": [
+      "rv_zimop"
+    ]
+  },
+  "fmv_x_w": {
+    "encoding": "111000000000-----000-----1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "fcvt_s_w": {
+    "encoding": "110100000000-----000-----1010011",
+    "extension": [
+      "rv_f"
+    ]
+  },
+  "vsetivli": {
+    "encoding": "11---------------111-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "vsetvl": {
+    "encoding": "1000000----------111-----1010111",
+    "extension": [
+      "rv_v"
+    ]
+  },
+  "xperm8": {
+    "encoding": "0010100----------100-----0110011",
+    "extension": [
+      "rv_zbkb"
+    ]
+  },
+  "xperm4": {
+    "encoding": "0010100----------010-----0110011",
+    "extension": [
+      "rv_zbkb"
+    ]
+  },
+  "c_addi4spn": {
+    "encoding": "000-----------00",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_fldsp": {
+    "encoding": "001-----------10",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_flwsp": {
+    "encoding": "011-----------10",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_fsdsp": {
+    "encoding": "101-----------10",
+    "extension": [
+      "rv_c"
+    ]
+  },
+  "c_fswsp": {
+    "encoding": "111-----------10",
+    "extension": [
+      "rv_c"
+    ]
+  }
+}
