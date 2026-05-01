@@ -1,0 +1,27 @@
+name: Auto-Sync RISC-V Specs
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every night
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Sync Script
+        run: node scripts/sync_instructions.mjs
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "data: automated instruction sync"
+          title: "Automated Instruction Sync"
+          body: "This PR updates the extension catalog with the latest instruction mappings from the dictionary."
+          branch: "auto-sync-data"
