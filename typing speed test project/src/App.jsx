@@ -6,9 +6,13 @@ import penImg from "./assets/pen.png";
 // ------------ Function to determine backend domain dynamically ------------
 // You don't need to understand this function, it's just a helper function to get the backend domain
 function getBackendDomain() {
+  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+    return "http://localhost:5000";
+  }
   const domain = window.location.hostname || window.currentURL;
   const protocolPrefix = "https://";
   const firstDotIndex = domain.indexOf(".");
+  if (firstDotIndex === -1) return "http://localhost:5000";
   const subdomain = domain.substring(0, firstDotIndex);
   const restOfDomain = domain.substring(firstDotIndex);
   return protocolPrefix + subdomain + "-backend" + restOfDomain;
